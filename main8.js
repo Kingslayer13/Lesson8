@@ -2,7 +2,9 @@
  * Created by оо on 25.11.13.
  */
 ;(function($){
-   console.log($("script", document.body));
-
-
+    $.fn.asda = function(){
+        console.log(this);
+        return this.append();
+    }
+    $("script").asda();
 })(jQuery);
