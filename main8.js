@@ -3,7 +3,10 @@
  */
 ;(function($){
     var input = $("input");
-    console.log(input.prop("value", "sergiy")); 
+    console.log(input.prop("value", "sergiy"));
     console.log(input.prop({value: "asd", title: "amam"})); //like object
-    console.log(input[0].value);
+    console.log(input.prop("title", function(index, value){
+        return "artem";
+    }));
+
 })(jQuery);
