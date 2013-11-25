@@ -2,9 +2,8 @@
  * Created by оо on 25.11.13.
  */
 ;(function($){
-    $.fn.asda = function(){
-        console.log(this);
-        return this.append();
-    }
-    $("script").asda();
+    var input = $("input");
+    console.log(input.prop("value", "sergiy")); 
+    console.log(input.prop({value: "asd", title: "amam"})); //like object
+    console.log(input[0].value);
 })(jQuery);
